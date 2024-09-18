@@ -1,10 +1,10 @@
-Naagin - The Game
+# Naagin - The Game
 
-Naagin is a snake game built with Python using the Pygame library. The game features a leaderboard, dynamic snake movement, and customizable themes for the snake and background colors. The objective of the game is to control the snake, eat the food, and grow while avoiding collisions with the boundaries or itself.
+Naagin is a snake game built with Python using the Pygame library. The game features a leaderboard, dynamic snake movement, and customizable themes for the snake and background colours. The objective of the game is to control the snake, eat the food, and grow while avoiding collisions with the boundaries or itself.
 Features
 
     Dynamic Snake Movement: The snake moves with wavy patterns, and the head has animated eyes.
-    Customizable Themes: Players can customize the snake's head, body, strip, background, and food colors through a dropdown menu.
+    Customizable Themes: Players can customize the snake's head, body, strip, background, and food colours through a dropdown menu.
     Player Profiles: Players can create or select profiles and save high scores in a SQLite database.
     Leaderboard: Displays the top 10 high scores and player names.
     Smooth Graphics and Animations: Uses Pygame for smooth, real-time rendering of graphics.
@@ -29,7 +29,7 @@ pip install pygame pygame-menu
 File Structure
 
     game.py: The main game file containing the logic for snake movement, rendering, and interactions.
-    homescreen.jpg: Background image for the game's home screen.
+    homescreen.jpg: A background image for the game's home screen.
     player_data.db: SQLite database to store player profiles and high scores.
     home_music.mp3: (Optional) Background music for the home screen.
 
@@ -49,8 +49,8 @@ bash
     python game.py
 
     Gameplay:
-        On the home screen, either create a new user or select an existing one.
-        Customize the snake and background colors via the "Theme" button.
+        Create a new user or select an existing one on the home screen.
+        Customize the snake and background colours via the "Theme" button.
         View the leaderboard to see the top 10 players.
         Start playing and aim for the highest score!
 
@@ -65,11 +65,11 @@ Game Screens
     Home Screen: Select an existing player, create a new player, or access the leaderboard and settings.
     Game Screen: Play the snake game. The snake grows as it eats food.
     Leaderboard: Displays the top 10 players with the highest scores.
-    Settings: Customize the snake and background colors.
+    Settings: Customize the snake and background colours.
 
 Saving and Loading Data
 
-The game stores player data and high scores in an SQLite database (player_data.db). When a new player is created, their profile is stored with an initial high score of 0. If an existing player achieves a higher score, the database is updated accordingly.
+The game stores player data and high scores in an SQLite database (player_data.db). When a new player is created, their profile is stored with an initial high score of 0. The database is updated accordingly if an existing player achieves a higher score.
 Leaderboard
 
 The leaderboard displays the top 10 players with the highest scores. This data is fetched from the SQLite database and is updated automatically after each game session.
